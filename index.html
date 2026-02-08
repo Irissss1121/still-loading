@@ -1,0 +1,182 @@
+<!doctype html>
+    <html>
+        <head>
+            <title>Irisssss</title>
+
+            <link rel = "shortcut icon" href="icon.png">
+            <meta charset = "UTF-8">
+
+            <style>
+                body{
+                    margin: 0;
+                    background-color:rgb(0, 0, 0);
+                    white-space: pre;
+                }
+
+                body::before{
+                    content: "";
+                    position: fixed;
+                    inset: 0;
+                    background: url("universe.gif") center / cover no-repeat;
+                    opacity: 0.95;
+                    z-index: -1;
+                    pointer-events: none; 
+                }
+
+                .textCard{
+                    position: absolute;
+                    width: 70vw;
+                    left: 15vw;
+                    border-radius: 20px;
+                    padding: 12px 16px;
+                    box-sizing: border-box;
+                }
+
+
+                #welcome{
+                    color: rgb(255, 31, 65);
+                    background-color: #db98b9;
+                    text-shadow: 4px 3px 1px rgb(104, 150, 219);
+                    border-bottom: 6px double rgb(255, 255, 255);
+                    /*style里用这个符号写备注，这个是css*/
+                    top: 18vh;
+                    font-size: 90px;
+                    font-family: Helvetica;
+                    text-align: left;
+                    z-index: 20;
+                }
+
+                #intro{
+                    color:azure;
+                    background-color: blue;
+                    top: 50px;
+                    font-size: 20px;
+                    font-family:'Courier New', Courier, monospace;
+                    z-index: 5;
+                }
+
+                #credits{
+                    top: 62vh;
+                    color: black;
+                    background-color: rgba(255,255,255,0.6);
+                    font-size: 16px;
+                    font-family: Helvetica;
+                    z-index: 5;
+                }
+
+                #slapLink:link{ color: black; text-decoration: none; }
+                #slapLink:visited{ color: green; text-decoration: none; }
+                #slapLink:hover{ color: red; font-style: italic; }
+                #slapLink:active{ color: blue; }
+
+                #keyword1{
+                    color: rgb(255, 31, 65);
+                    text-shadow: 2px 2px 0px rgb(104, 150, 219);
+                    font-weight: 800;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+
+                #keyword2{
+                    background-color: black;
+                    color: rgb(38, 255, 45);
+                    padding: 2px 6px;
+                    border-radius: 6px;
+                    text-decoration: underline;
+                    font-weight: 700;
+                }
+                
+                .floatingGif{
+                    position: fixed;
+                    width: 120px;
+                    border-radius: 15px;
+                    z-index: 10;
+                    transition: transform 0.3s ease;
+                }
+
+                .floatingGif:hover{
+                    transform: scale(1.12);
+                }
+
+                #gif1{
+                    top: 0px;
+                    right: 10px;
+                    opacity: .8;
+                    height: 120px;
+                    width: auto;
+                    transition: height 3s ease-in, transform 0.3s ease;
+                    z-index: 15;
+                }
+
+                #gif1:hover{
+                    height: 300px;
+                }
+
+                #gif2{
+                    top: 550px;
+                    right: 100px;
+                    opacity: 0.7;
+                }
+
+                #gif3{
+                    top: 200px;
+                    right: 200px;
+                }
+
+                #gif4{
+                    top: 400px;
+                    left: 10px;
+                }
+
+                #video1{
+                    opacity: .7;
+                }
+
+                #video1{
+                    position: fixed;
+                    right: 20vw;
+                    bottom: 2vh;
+                    width: 22vw;
+                    max-width: 360px;
+                    border-radius: 12px;
+                    opacity: 0.8;
+                    z-index: 30;
+                }
+
+                #eye{
+                    position: fixed;
+                    left: 6vw;
+                    top: 20vh;
+                    width: 30vw;
+                    opacity: 0.35;
+                    z-index: 25; 
+                    pointer-events: none;
+                }
+
+            </style>
+        </head>
+        <body>
+            <a href="https://neal.fun" target="_blank" rel="noopener"><img id="gif1" class="floatingGif" src="cat-laptop.gif" alt="cat laptop gif"></a>
+            <a id="slapLink" href="https://eelslap.com" target="_blank" rel="noopener"><div id="welcome" class="textCard">A SlApE!!!!!!</div></a>
+
+            <img id = "gif2" class = "floatingGif" src = "cat-laptop.gif">
+            <img id = "gif3" class = "floatingGif" src = "cat-laptop.gif">
+            <img id = "gif4" class = "floatingGif" src = "cat-laptop.gif">
+            <img id="eye" src="eye.gif">
+
+            <video loop controls id="video1" src="video.mp4" type="video/mp4"></video> 
+
+            <div id="intro" class="textCard">Tips: click a meme for special game website</div>
+            <div id="intro" class="textCard">Tips: click a meme for <span id="keyword1">special game website</span>Try the laptop cat first.</div>
+            <div id="credits" class="textCard">Image sources: <span id="keyword2">Tenor</span> + Imgur <br>See the comment at the bottom of the code.</div>
+
+            <!--style之外的地方都用html写备注-->
+        </body>
+    </html>
+
+    <!-- IMAGE SOURCES
+    https://tenor.com/vJUy.gif
+    https://imgur.com/gallery/gengar-dance-yRXumoH
+    https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGlqbnBoODVtcHpzdmdrYm1rczRrcmZyMWV4b2xxNHp0ejJzMWJmaSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iicDrNGWxHmDrIni6j/giphy.gif
+    https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGlqbnBoODVtcHpzdmdrYm1rczRrcmZyMWV4b2xxNHp0ejJzMWJmaSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fV8BLpra1VV3q/giphy.gif
+    -->
